@@ -2,12 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifra de César</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Cifra de César</h1>
+        <div id="inicio">
+          <h2>Escolha a opção desejada: </h2>
+          <p><button onclick="queroCodificar(event)">Codificar</button></p>
+          <p><button onclick="queroDescodificar(event)">Descodificar</button></p>
+        </div>
+        <div id="queroCodificar" class="invisivel">
+          <form>
+            <p>Insira a mensagem que você deseja codificar: </p>
+            <input id="mensagemCodificar" type="text"/>
+            <p>Digite a chave de deslocamento: </p>
+            <input id="offset1" type="number"/>
+            <p>
+              <button onclick="codificar(event)">Enviar</button>
+              <input id="limpar" type="submit" value="Limpar" onclick="limpar1(event)">
+              <button onclick="voltar1(event)">Voltar</button>
+            </p>
+          </form>
+            <p id ="resultCodificar"></p>
+        </div>
+        <div id="queroDescodificar" class="invisivel">
+          <form>
+              <p>Insira a mensagem que você deseja descodificar: </p>
+              <input id="mensagemDescodificar" type="text">
+              <p>Digite a chave de deslocamento: </p>
+              <input id="offset2" type="number">
+              <p>
+                <button onclick="descodificar(event)">Enviar</button>
+                <input id="limpar" type="submit" value="Limpar" onclick="limpar2(event)">
+                <button onclick="voltar2(event)">Voltar</button>
+              </p>
+          </form>
+            <p id ="resultDescodificar"></p>
+        </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
