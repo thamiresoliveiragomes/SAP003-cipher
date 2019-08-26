@@ -13,9 +13,11 @@ function codificar(event) {
   } else if (offset < 0) {
     offset = Math.abs(offset);
     let result = window.cipher.decode(offset, string);
+    document.getElementById("resposta").classList.remove("invisivel");
     document.getElementById("resposta").innerHTML = `<p>A mensagem codificada é: <p>${result}</p></p>`;
   } else {
     let result = window.cipher.encode(offset, string);
+    document.getElementById("resposta").classList.remove("invisivel");
     document.getElementById("resposta").innerHTML = `<p>A mensagem codificada é: <p>${result}</p></p>`;
   }
 }
@@ -30,9 +32,11 @@ function descodificar(event) {
   } else if (offset < 0) {
     offset = Math.abs(offset);
     let result = window.cipher.encode(offset, string);
+    document.getElementById("resposta").classList.remove("invisivel");
     document.getElementById("resposta").innerHTML = `<p>A mensagem descodificada é: <p>${result}</p></p>`;
   } else {
     let result = window.cipher.decode(offset, string);
+    document.getElementById("resposta").classList.remove("invisivel");
     document.getElementById("resposta").innerHTML = `<p>A mensagem descodificada é: <p>${result}</p></p>`;
   }
 }
