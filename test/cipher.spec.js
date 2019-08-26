@@ -41,6 +41,9 @@ describe("cipher", () => {
     it("should return \" !@\" for \" !@", () => {
       assert.equal(cipher.encode(33, " !@"), " !@");
     });
+    it("should return \"123\" para \"123", () => {
+      assert.equal(cipher.encode(33, "123"), "123");
+    });
   });
 
   describe("cipher.decode", () => {
@@ -81,6 +84,8 @@ describe("cipher", () => {
     it("should return \" !@\" para \" !@", () => {
       assert.equal(cipher.decode(33, " !@"), " !@");
     });
+    it("should return \"123\" para \"123", () => {
+      assert.equal(cipher.decode(33, "123"), "123");
+    });
   });
-
 });

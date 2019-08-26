@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,23 +12,21 @@
         <div id="dados">
           <form>
             <p>Insira a mensagem:</p>
-            <input id="mensagem" type="text"/>
-            <p>Digite a chave de deslocamento: </p>
-            <input id="offset" type="number"/>
+            <input id="mensagem" type="text" class="caixaMensagem"/>
+            <p>Digite a chave de deslocamento:</p>
+            <input id="offset" type="number" class="caixaOffset"/>
           </form>
         </div>
 
         <div id="botoes">
           <p>
-            <button id="codificar">Codificar</button>
-            <button id="descodificar">Descodificar</button>
+            <input id="codificar" type="submit" value="Codificar">
+            <input id="descodificar" type="submit" value="Descodificar">
           </p>
           <p><input id="limpar" type="submit" value="Limpar"></p>
         </div>
 
         <div id="resposta">
-          <p id ="resultCodificar"></p>
-          <p id ="resultDescodificar"></p>
         </div>
 
     </div>

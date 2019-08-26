@@ -27,7 +27,7 @@ function decode(offset, string) {
   for (let i=0; i<tamanho; i++) {
     let stringToAscii = string[i].charCodeAt(0);
     if (stringToAscii >= 65 && stringToAscii <= 90) {
-      let calculo = (stringToAscii - 90 - offset)% 26 + 90;
+      let calculo = (stringToAscii - 90 - offset) % 26 + 90;
       let result = String.fromCharCode (calculo);
       arrayResposta.push (result);
     } else if (stringToAscii >= 97 && stringToAscii <= 122) {
