@@ -4,32 +4,50 @@
     <meta charset="utf-8">
     <title>Cifra de César</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+  </head>    
   <body>
-    <div id="root">
-      <h1>Cifra de César</h1>
+    <header>
 
-        <div id="dados">
-          <form>
-            <p>Insira a mensagem:</p>
-            <input id="mensagem" type="text" class="caixaMensagem"/>
-            <p>Digite a chave de deslocamento:</p>
-            <input id="offset" type="number" class="caixaOffset"/>
-          </form>
-        </div>
+      <figure id="estatua">
+        <img src="img/estatua.png">
+      </figure>
 
-        <div id="botoes">
+      <figure id="titulo">
+        <img src="img/titulo.png">
+      </figure>
+
+    </header>
+
+    <section>
+
+      <main>
+
+        <form class="dados">
+          <p>Insira a mensagem:</p>
+          <p><input id="mensagem" type="text" class="caixaMensagem"/></p>
+          <p>Chave de deslocamento:
+          <input id="offset" type="number" class="caixaOffset"/>
+          </p>
+        </form>
+
+        <div class="botoes">
           <p>
             <input id="codificar" type="submit" value="Codificar">
             <input id="descodificar" type="submit" value="Descodificar">
+            <input id="limpar" type="submit" value="Limpar">
           </p>
-          <p><input id="limpar" type="submit" value="Limpar"></p>
         </div>
 
-        <div id="resposta">
-        </div>
+      </main>
 
-    </div>
+      <aside id="resposta" class="invisivel">
+        <p id="resultados"></p>
+        <br>
+        <input id="fechar" type="submit" value="Fechar">
+      </aside>
+
+    </section>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

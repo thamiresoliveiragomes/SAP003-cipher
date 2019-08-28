@@ -14,36 +14,26 @@ describe("cipher", () => {
       assert.equal(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
 
-    // Hacker edition
-    //
-    // [Español]
-    // Si decides agregar soporte para minúsculas descomenta el test a
-    // continuación.
-    //
-    // [Português]
-    // Se quiser adicionar testes para letras minúsculas, descomente o teste
-    // abaixo.
-    //
+    //Teste para letras minúsculas
+
     it("should return \"hijklmnopqrstuvwxyzabcdefg\"for \"abcdefghijklmnopqrstuvwxyz\"with offset 33", () => {
       assert.equal(cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"), "hijklmnopqrstuvwxyzabcdefg");
     });
 
-    // Hacker edition
-    //
-    // [Español]
-    // Si decides implementar soporte para caracteres no alfabéticos descomenta
-    // el test a continuación.
-    //
-    // [Português]
-    // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
-    // teste abaixo.
-    //
+    // Teste para caracteres não alfabéticos
+
     it("should return \" !@\" for \" !@", () => {
       assert.equal(cipher.encode(33, " !@"), " !@");
     });
+
+    // Teste para números
+    
     it("should return \"123\" para \"123", () => {
       assert.equal(cipher.encode(33, "123"), "123");
     });
+
+    // Teste para offset negativo
+    
   });
 
   describe("cipher.decode", () => {
@@ -56,34 +46,20 @@ describe("cipher", () => {
       assert.equal(cipher.decode(33, "HIJKLMNOPQRSTUVWXYZABCDEFG"), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
 
-    //
-    // Hacker edition
-    //
-    // [Español]
-    // Si decides agregar soporte para minúsculas descomenta el test a
-    // continuación.
-    //
-    // [Português]
-    // Se quiser adicionar testes para letras minúsculas, descomente o teste
-    // abaixo.
-    //
+    //Teste para letras minúsculas
+    
     it("should return \"abcdefghijklmnopqrstuvwxyz\" for \"hijklmnopqrstuvwxyzabcdefg\" with offset 33", () => {
       assert.equal(cipher.decode(33, "hijklmnopqrstuvwxyzabcdefg"), "abcdefghijklmnopqrstuvwxyz");
     });
 
-    // Hacker edition
-    //
-    // [Español]
-    // Si decides implementar soporte para caracteres no alfabéticos descomenta
-    // el test a continuación.
-    //
-    // [Português]
-    // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
-    // teste abaixo.
-    //
+    // Teste para caracteres não alfabéticos
+
     it("should return \" !@\" para \" !@", () => {
       assert.equal(cipher.decode(33, " !@"), " !@");
     });
+
+    // Teste para números
+
     it("should return \"123\" para \"123", () => {
       assert.equal(cipher.decode(33, "123"), "123");
     });

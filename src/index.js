@@ -1,6 +1,7 @@
 document.getElementById("codificar").addEventListener("click", codificar);
 document.getElementById("descodificar").addEventListener("click", descodificar);
 document.getElementById("limpar").addEventListener("click", limpar);
+document.getElementById("fechar").addEventListener("click", fechar);
 
 function codificar(event) {
   event.preventDefault();
@@ -14,11 +15,11 @@ function codificar(event) {
     offset = Math.abs(offset);
     let result = window.cipher.decode(offset, string);
     document.getElementById("resposta").classList.remove("invisivel");
-    document.getElementById("resposta").innerHTML = `<p>A mensagem codificada é: <p>${result}</p></p>`;
+    document.getElementById("resultados").innerHTML = `<p>Mensagem codificada: </p><p>${result}</p>`;
   } else {
     let result = window.cipher.encode(offset, string);
     document.getElementById("resposta").classList.remove("invisivel");
-    document.getElementById("resposta").innerHTML = `<p>A mensagem codificada é: <p>${result}</p></p>`;
+    document.getElementById("resultados").innerHTML = `<p>Mensagem codificada: </p><p>${result}</p>`;
   }
 }
 function descodificar(event) {
@@ -33,16 +34,19 @@ function descodificar(event) {
     offset = Math.abs(offset);
     let result = window.cipher.encode(offset, string);
     document.getElementById("resposta").classList.remove("invisivel");
-    document.getElementById("resposta").innerHTML = `<p>A mensagem descodificada é: <p>${result}</p></p>`;
+    document.getElementById("resultados").innerHTML = `<p>Mensagem descodificada: </p><p>${result}</p>`;
   } else {
     let result = window.cipher.decode(offset, string);
     document.getElementById("resposta").classList.remove("invisivel");
-    document.getElementById("resposta").innerHTML = `<p>A mensagem descodificada é: <p>${result}</p></p>`;
+    document.getElementById("resultados").innerHTML = `<p>Mensagem descodificada: </p><p>${result}</p>`;
   }
 }
 function limpar(event) {
   event.preventDefault();
-  document.getElementById("resposta").classList.add("invisivel");
   document.getElementById("mensagem").value = "";
   document.getElementById("offset").value = "";
+}
+function fechar(event) {
+  event.preventDefault();
+  document.getElementById("resposta").classList.add("invisivel");
 }

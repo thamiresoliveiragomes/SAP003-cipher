@@ -1,3 +1,78 @@
 .invisivel {
     display: none;
 }
+header {
+    text-align: center;
+}
+body {
+    background-color: #400b47;
+    background-image: url(../src/img/grade.png);
+    background-attachment: scroll;
+}
+main {
+    color: black;
+    background-image: url(../src/img/paint.png);
+    padding: 40px 80px;
+    width: 326px;
+    height: 320px;
+    float: left;
+    margin-top: 85px;
+    margin-bottom: 80px;
+    margin-left: 385px;
+    text-align: center;
+}
+aside {
+    background-image: url(../src/img/win98box.png);
+    background-size: 430px 305px;
+    color: black;
+    border-top: -70px;
+    padding: 65px;
+    width: 300px;
+    height: 175px;
+    margin-top: 50px;
+    margin-right: 200px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    display: inline-block;
+    left: 910px;
+}
+#estatua{
+    width: 0px;
+    height: 80px;
+}
+#titulo{
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+#resultados {
+    font-size: 16px;
+    word-wrap: break-word;
+}
+#mensagem {
+    font-size: 20px;
+    display: inline-block;
+}
+#codificar {
+    width: 30%;
+}
+#descodificar {
+    width: 38%;
+}
+#limpar {
+    width: 28%
+}
+.caixaMensagem {
+    width: 350px;
+    height: 120px;
+    word-wrap: break-word;
+}
+.caixaOffset {
+    width: 50px;
+    height: 30px;
+}
+.dados{
+    font-size: 14px;
+    text-align: center;
+}
