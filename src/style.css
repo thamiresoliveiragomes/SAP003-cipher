@@ -8,7 +8,7 @@ body {
     background-image: url(../src/img/fundo.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     
 }
 main {
