@@ -6,8 +6,13 @@ header {
 }
 body {
     background-image: url(../src/img/fundo.jpg);
+<<<<<<< HEAD
     background-attachment: fixed;
     background-repeat: repeat;
+=======
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+>>>>>>> parent of 50edc0d... atualizado background repeat
     background-size: cover;
     
 }
