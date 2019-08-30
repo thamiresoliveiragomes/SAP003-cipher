@@ -5,7 +5,7 @@ header {
     text-align: center;
 }
 body {
-    background-image: url(https://i.redd.it/h8cn670wkgi31.jpg);
+    background-image: url(../src/img/fundo.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: 100%;
