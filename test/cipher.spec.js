@@ -32,8 +32,6 @@ describe("cipher", () => {
       assert.equal(cipher.encode(33, "123"), "123");
     });
 
-    // Teste para offset negativo
-    
   });
 
   describe("cipher.decode", () => {

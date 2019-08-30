@@ -5,9 +5,11 @@ header {
     text-align: center;
 }
 body {
-    background-color: #400b47;
-    background-image: url(../src/img/grade.png);
+    background-image: url(https://i.redd.it/h8cn670wkgi31.jpg);
     background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 main {
     color: black;
@@ -16,8 +18,8 @@ main {
     width: 326px;
     height: 320px;
     float: left;
-    margin-top: 85px;
-    margin-bottom: 80px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     margin-left: 385px;
     text-align: center;
 }
@@ -29,7 +31,7 @@ aside {
     padding: 65px;
     width: 300px;
     height: 175px;
-    margin-top: 50px;
+    margin-top: -50px;
     margin-right: 200px;
     text-align: center;
     float: right;
@@ -38,17 +40,14 @@ aside {
     left: 910px;
 }
 #estatua{
-    width: 0px;
+    width: 370px;
     height: 80px;
+    margin-top: 50px;
 }
 #titulo{
     position: absolute;
-    left: 300px;
+    left: 370px;
     top: 50px;
-}
-#resultados {
-    font-size: 16px;
-    word-wrap: break-word;
 }
 #mensagem {
     font-size: 20px;
@@ -63,10 +62,15 @@ aside {
 #limpar {
     width: 28%
 }
+#resultados {
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow: auto;
+    height: 145px;
+}
 .caixaMensagem {
     width: 350px;
     height: 120px;
-    word-wrap: break-word;
 }
 .caixaOffset {
     width: 50px;
@@ -76,3 +80,4 @@ aside {
     font-size: 14px;
     text-align: center;
 }
+
