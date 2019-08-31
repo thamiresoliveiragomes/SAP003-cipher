@@ -8,9 +8,9 @@ function codificar(event) {
   let offset = Number(document.getElementById("offset").value);
   let string = document.getElementById("mensagem").value;
   if (string === "") {
-    alert("Preencha a mensagem a ser codificada");
+    alert("Digite a mensagem");
   } else if (offset === 0 || !Number.isInteger(offset)) {
-    alert("Digite uma chave de deslocamento válida");
+    alert("Digite um deslocamento válido");
   } else if (offset < 0) {
     offset = Math.abs(offset);
     let result = window.cipher.decode(offset, string);
